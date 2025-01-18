@@ -15,3 +15,6 @@ def divide(a, b):
     if b == 0:
         raise ValueError("除数不能为零")
     return a / b
+
+if __name__ == "__main__":
+    print(add(3, 5))
