@@ -17,4 +17,11 @@ def divide(a, b):
     return a / b
 
 if __name__ == "__main__":
-    print(add(3, 5))
+    try:
+        print("add(3, 5) =", add(3, 5))
+        print("subtract(3, 5) =", subtract(3, 5))
+        print("multiply(3, 5) =", multiply(3, 5))
+        print("divide(3, 5) =", divide(3, 5))
+        print("divide(3, 0) =", divide(3, 0))  # 这行代码会引发异常，用于测试异常处理
+    except Exception as e:
+        print("Error:", e)
